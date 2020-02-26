@@ -1,0 +1,32 @@
+
+<Center><pre>welcome to Unthinkable!
+
+please customize your character.
+<font size=10>
+<b id="head">O</b>
+<b id="bod">/|\</b>
+<b id="legs">/ \</b>
+<button id="b1" onclick="randomhead()">randomize head color</button> <button id="b1" onclick="randombody()">randomize body color</button> <button id="b1" onclick="randomlegs()">randomize legs color</button>
+
+<button href="savechar">SAVE</button>
+
+
+
+
+
+
+
+<script>
+function randombody() {
+  document.getElementById('bod').style.color = randomColors();
+}
+function randomlegs() {
+  document.getElementById('legs').style.color = randomColors();
+}
+function randomhead() {
+  document.getElementById('head').style.color = randomColors();
+}
+function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+</script>
